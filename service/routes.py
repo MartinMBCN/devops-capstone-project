@@ -104,7 +104,6 @@ def update_accounts(account_id):
     This endpoint will update an Account based on the posted data
     """
     app.logger.info("Request to update an Account with id: %s", account_id)
-    add-ci-build
 
     account = Account.find(account_id)
     if not account:
@@ -136,7 +135,6 @@ def delete_accounts(account_id):
     This endpoint will delete an Account based on the account_id that is requested
     """
     app.logger.info("Request to delete an Account with id: %s", account_id)
-    add-ci-build
 
     account = Account.find(account_id)
     if account:
@@ -147,7 +145,6 @@ def delete_accounts(account_id):
         account.delete()
 
     return "", status.HTTP_204_NO_CONTENT
-    main
 
     return "", status.HTTP_204_NO_CONTENT
 
