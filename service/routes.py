@@ -117,7 +117,6 @@ def update_accounts(account_id):
     account.update()
 
     return account.serialize(), status.HTTP_200_OK
-    main
 
     account.deserialize(request.get_json())
     account.update()
